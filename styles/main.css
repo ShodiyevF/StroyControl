@@ -1,0 +1,414 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v2-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/inter-v2-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-500.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"); 
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn{
+    width: auto;
+    color: black;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 13px 25px;
+    text-decoration: none;
+    border: 1px solid #DADEDF;
+}
+
+.btn-dark{
+    width: auto;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 13px 25px;
+    text-decoration: none;
+    background-color: #212B31;
+    border: 1px solid #DADEDF;
+}
+
+.container {
+    max-width: 1056px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header__container{
+    max-width: 1410px;
+    padding: 25px 30px 25px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header__link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header__logo-img{
+    vertical-align: baseline;
+}
+
+.site-header__sitenav{
+    display: flex;
+    align-items: center;
+}
+
+.site-header__list{
+    list-style-type: none;
+    display: flex;
+}
+
+.site-header__item{
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.site-header__item-link{
+    color: #72787D;
+    text-decoration: none;
+}
+
+.site-header__item-link--active{
+    color: #036FC7;
+}
+
+.site-header__nav-link{
+    color: #fff;
+    background-color: #212B31;
+    margin-left: 20px;
+    padding: 9px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* HEADER TUGADI */
+
+
+
+/* MAIN BOSHLANDI */
+
+
+/* SEC-HERO */
+
+.site-hero{
+    height: 792px;
+    background-image: url("../img/trucks-bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 150px;
+}
+
+.sec-hero__title{
+    width: 818px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #212B31;
+    
+}
+
+.sec-hero__btn-wrapper{
+    display: flex;
+
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* SEC-HERO */
+
+/* SEC-TRUCKS */
+
+.sec-trucks__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-trucks__item{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec-trucks__item--left::before{
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-image: url("../img/analic.png");
+    background-position: center center;
+    content: "";
+}
+
+.sec-trucks__item--center::before{
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-image: url("../img/rework.png");
+    background-position: center center;
+    content: "";
+}
+
+.sec-trucks__item--right::before{
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-image: url("../img/helmet.png");
+    background-position: center center;
+    content: "";
+}
+
+.sec-trucks__link{
+    text-decoration: none;
+}
+
+.sec-trucks__item-title{
+    color: black;
+}
+
+.sec-trucks__item-text{
+    color: #72787D;   
+}
+
+/* SEC-TRUCKS */
+
+/* SEC-TALK */
+
+.sec-talk{
+    margin-bottom: 145px;
+    height: 505px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url("../img/talk-bg.png");
+}
+
+.sec-talk__text-wrapper{
+    text-align: center;
+}
+
+.sec-talk__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.sec-talk__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.sec-talk__text-wrapper::after{
+    width: 1040px;
+    height: 305px;
+    content: "";
+}
+
+/* SEC-TALK */
+
+/* SEC-TALKS */
+
+.sec-talks__title{
+    width: 781px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 168px;
+}   
+
+.sec-talks__text-img-wrapper{
+    display: flex;   
+}
+
+.sec-talks__text-img-wrapper::after{
+    width: 464px;
+    height: 400px;
+    background-image: url("../img/women-man.png");
+    content: "";
+}
+
+.sec-talks__text-title{
+    width: 490px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.sec-talks__texts{
+    width: 542px;
+}
+
+.sec-talks__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #72787D;
+}
+
+.sec-talks__yellow-text{
+    font-size: 20px;
+    line-height: 32px;
+    color: #212B31;
+}
+
+.sec-talks__yellow-text::after{
+    content: "";
+}
+
+/* SEC-TALKS */
+
+/* SEC-LOGOS */
+
+.sec-comp__hr{
+    border: none;
+    height: 1px;
+    background-color: #EEF2F3;
+}
+
+.sec-comp__list{
+    width: 1056px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: black;
+    list-style-type: none;
+    /* justify-content: center; */
+}
+
+.sec-comp__item{
+    background-color: yellow;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* SEC-LOGOS */
+
+/* SEC-DELIVERY*/
+.sec-delivery{
+    background-color: rgba(0, 5, 9, 0.1);
+}
+
+.sec-delivery__title{
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #212B31;
+}
+
+.sec-delivery__text{
+    width: 643px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 32px;
+    color: #72787D;
+    
+}
+/* SEC-DELIVERY */
+
+/* SEC-MAKE*/
+
+.sec-make{
+    background-color: #212B31;
+}
+
+.sec-make__title{
+    color: white;
+    background-image: url("../img/make-bg.png");
+    background-repeat: no-repeat;
+    background-position: left right;
+    
+}
+
+.sec-make__container{
+    max-width: 1055px;
+}
+
